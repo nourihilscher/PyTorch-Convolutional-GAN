@@ -1,0 +1,5 @@
+svhn_data
+cifar_data
+generated_images
+.ipynb_checkpoints
+__pycache__/
