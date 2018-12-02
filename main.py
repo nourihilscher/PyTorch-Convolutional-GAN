@@ -190,7 +190,7 @@ for e in range(opt.epochs):
             # Generate predictions
             predictions = G.forward(sample_noise)
             for i in range(opt.sample_size):
-                axes[i].imshow(im_convert(predictions[i], rescale=True), cmap="gray")
+                axes[i].imshow(im_convert(predictions[i], rescale=True))
             plt.savefig("generated_images/sample_E{}_B{}.png".format(e, batch_i))
             plt.close("all")
     if (e % opt.plot_every == 0):
